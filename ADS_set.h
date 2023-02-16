@@ -102,14 +102,14 @@ public:
 template <typename Key, size_t N>
 ADS_set<Key,N> &ADS_set<Key,N>::operator=(const ADS_set &other){
 	ADS_set temp{other};
-  swap(temp);
+	swap(temp);
 	return *this;
 }
 
 template <typename Key, size_t N>
 ADS_set<Key,N> &ADS_set<Key,N>::operator=(std::initializer_list<key_type> ilist){
 	ADS_set temp{ilist};
-  swap(temp);
+	swap(temp);
 	return *this;
 }
 
@@ -174,7 +174,7 @@ typename ADS_set<Key,N>::size_type ADS_set<Key,N>::erase(const key_type &key){
 template <typename Key, size_t N>
 void ADS_set<Key,N>::clear(){
 	ADS_set tmp;
-  swap(tmp);
+	swap(tmp);
 }
 
 //Insert every element from other into the new ADS_set
